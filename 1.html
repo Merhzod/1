@@ -1,0 +1,104 @@
+<html>
+<head>
+<title>Sports product store</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>Sports product store</h1>
+<p>Адрес: Москва, ул.  </p>
+<p>Телефон: +7 (***) ***-**-**</p>
+<button class="reservation__btn btn-primary">  <a class="nav-main__link" href="новый 1.html">Войти</button></a>
+<button class="reservation__btn btn-primary">  <a class="nav-main__link" href="Зарегистрироваться.html">Регистрация</button></a>
+</header>
+
+<nav class="buttons">
+<ul>
+<li><a href="#menu">Каталог</a></li>
+<li><a href="#reservation">Заказать</a></li>
+</ul>
+</nav>
+
+<section id="menu">
+<h2 class="forh2">Акции</h2>
+
+<div class="menu-item">
+<img src="Протеиновый печенье Forsio.jpg" alt="Блюдо 1">
+<h2 class="forh2">Протеиновый печенье Forsio </h2>
+<h3>Протеиновое печенье Forsio со вкусом шоколада и 20% белка в составе - отличный выбор для полезного перекуса. Пищевая ценность на 100г: белки 20г, жиры 26г, углеводы 47г. Энергетическая ценность (калорийность) 350ккал. </p>
+</h3><p class="p2">Цена: 79 рублей</p>
+</div>
+
+<div class="menu-item">
+<img src="Батончик протеиновый Forsio .jpg" alt="Блюдо 2">
+<h2 class="forh2">Батончик протеиновый Forsio </h2>
+<h3>Протеиновый батончик Forsio со вкусом шоколада и 20% содержанием белка - отличный выбор для полезного и вкусного перекуса.</p>
+</h3><p class="p2">Цена: 79 рублей</p></h3>
+</div>
+
+<div class="menu-item">
+<img src="1.jpg" alt="Блюдо 2">
+<h2 class="forh2">Витаминная вода Forsio "Апельсин" </h2>
+<h3>Витаминная вода Forsio эффективно утоляет жажду и помогает при восстановлении организма после тренировок, восполняя запас витаминов, которые необходимы для поддержки иммунитета. Содержит всего 5 калорий на бутылку.
+Без сахара.</p>
+</h3><p class="p2">Цена: 99 рублей</p>
+</header>
+</div>
+</section>
+
+<section id="reservation">
+<h2>Доставка</h2>
+<p>Офрмить Доставку:</p>
+<form>
+<label for="name">Имя:</label>
+<input type="text" id="name" name="name" required>
+
+<label for="date">Дата:</label>
+<input type="date" id="date" name="date" required>
+
+<label for="time">Время:</label>
+<input type="time" id="time" name="time" required>
+
+<label for="phone">Телефон:</label>
+<input type="tel" id="phone" name="phone" required>
+
+
+<input type="submit" value="Заказать">
+</form>
+</section>
+
+<footer>
+<p>&copy; 2024 Sports product store. Все права защищены.</p>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+const reservationForm = document.getElementById("reservationForm");
+const messageDiv = document.getElementById("message");
+
+reservationForm.addEventListener("submit", function (event) {
+event.preventDefault();
+
+// Получаем значения из формы
+const name = document.getElementById("name").value;
+const date = document.getElementById("date").value;
+const time = document.getElementById("time").value;
+const phone = document.getElementById("phone").value;
+
+
+// Ваш код обработки бронирования здесь
+// Например, можно отправить данные на сервер или выполнить другие действия
+
+// После обработки формы, можно очистить поля
+document.getElementById("name").value = "";
+document.getElementById("date").value = "";
+document.getElementById("time").value = "";
+document.getElementById("phone").value = "";
+
+// Отображаем сообщение об успешном бронировании
+alert= 'Бронирование выполнено успешно!';
+});
+});
+</script>
+</body>
+</html>
